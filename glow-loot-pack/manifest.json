@@ -1,0 +1,16 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "§l§6Glow Loot Pack",
+    "description": "§eMakes dropped items glow and plays proximity sounds",
+    "version": [1, 0, 0],
+    "uuid": "12345678-1234-1234-1234-123456789abc"
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "version": [1, 0, 0],
+      "uuid": "87654321-4321-4321-4321-abcdef123456"
+    }
+  ]
+}

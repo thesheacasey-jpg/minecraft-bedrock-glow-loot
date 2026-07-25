@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:item",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/items/diamond"
+      },
+      "geometry": {
+        "default": "geometry.item"
+      },
+      "render_controllers": ["controller.render.item"],
+      "spawn_egg": null
+    },
+    "components": {
+      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:glowing_text_entity": {
+        "glowing": true
+      }
+    }
+  }
+}

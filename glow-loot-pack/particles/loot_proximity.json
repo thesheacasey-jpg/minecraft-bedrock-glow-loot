@@ -1,0 +1,47 @@
+{
+  "format_version": "1.10.0",
+  "particle_effect": {
+    "description": {
+      "identifier": "minecraft:loot_glow",
+      "basic_render_parameters": {
+        "material": "particles_alpha",
+        "texture": "textures/particle/particles"
+      }
+    },
+    "curves": {
+      "variable.lifetime": {
+        "type": "linear",
+        "input": "variable.age",
+        "range": [1.0, 0.0],
+        "domain": [0.0, 1.0]
+      }
+    },
+    "events": {
+      "creation": {
+        "particle_initial_spin": {
+          "rotation": {
+            "direction": [0.0, 0.0, 1.0],
+            "rotation": "Math.random() * 360.0"
+          }
+        },
+        "particle_lifetime_events": {
+          "max_lifetime": 2.0
+        },
+        "particle_appearance_billboard": {
+          "size": [0.1, 0.1],
+          "facing_camera_mode": "lookat_xyz",
+          "uv": {
+            "texture_width": 128,
+            "texture_height": 128,
+            "uv": [0, 0],
+            "uv_size": [8, 8]
+          }
+        },
+        "particle_motion_parametric": {
+          "relative_position": ["Math.random() * 0.1 - 0.05", "Math.random() * 0.1", "Math.random() * 0.1 - 0.05"],
+          "direction": ["Math.random() * 0.02", "Math.random() * 0.02 + 0.01", "Math.random() * 0.02"]
+        }
+      }
+    }
+  }
+}

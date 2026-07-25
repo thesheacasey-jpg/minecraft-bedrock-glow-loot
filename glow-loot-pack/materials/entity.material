@@ -1,0 +1,17 @@
+material Version
+        : 2.0
+        {
+        vertexShader = "shaders/glsl/entity.vertex";
+        fragmentShader = "shaders/glsl/entity.fragment";
+        blendSrc = "sourceAlpha";
+        blendDst = "oneMinusSourceAlpha";
+        depthFunc = "lessThanEqual";
+        depthTest = true;
+        depthWrite = true;
+        alphaTest = true;
+        alphaTestFunc = "greaterEqual";
+        alphaRef = 0.5;
+        define GLINT_PASS : false;
+        define GLINT_PASS_SECOND : false;
+        define IS_GLINT : false;
+};
