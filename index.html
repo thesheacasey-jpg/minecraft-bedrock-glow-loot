@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Loot Pack - Download</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #fbbf24;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .subtitle {
+            color: #64748b;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+        
+        .download-btn {
+            background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
+            color: white;
+            border: none;
+            padding: 20px 40px;
+            font-size: 1.3em;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 20px 0;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 10px 25px rgba(245, 158, 11, 0.3);
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(245, 158, 11, 0.4);
+        }
+        
+        .features {
+            background: #f8fafc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: left;
+        }
+        
+        .features h3 {
+            color: #1e3a8a;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        
+        .features ul {
+            list-style: none;
+        }
+        
+        .features li {
+            color: #475569;
+            margin: 10px 0;
+            font-size: 1em;
+        }
+        
+        .features li:before {
+            content: "✓ ";
+            color: #10b981;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .steps {
+            background: #eff6ff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: left;
+        }
+        
+        .steps h3 {
+            color: #1e3a8a;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        
+        .step {
+            margin: 15px 0;
+            color: #475569;
+        }
+        
+        .step-number {
+            background: #3b82f6;
+            color: white;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        
+        .footer {
+            color: #94a3b8;
+            font-size: 0.9em;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+        }
+        
+        .version {
+            color: #cbd5e1;
+            font-size: 0.85em;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⭐ Glow Loot Pack</h1>
+        <p class="subtitle">Make all dropped items glow on Minecraft Bedrock Realms</p>
+        
+        <button class="download-btn" onclick="downloadFile()">📥 DOWNLOAD NOW</button>
+        
+        <div class="features">
+            <h3>✨ What You Get</h3>
+            <ul>
+                <li>All dropped items glow visibly</li>
+                <li>See items through walls and terrain</li>
+                <li>Proximity sounds that get faster when closer</li>
+                <li>Works on Realms without cheats</li>
+                <li>No operator commands needed</li>
+                <li>Perfect for Survival mode</li>
+            </ul>
+        </div>
+        
+        <div class="steps">
+            <h3>🎮 Installation (3 Steps)</h3>
+            <div class="step">
+                <span class="step-number">1</span>
+                Click the DOWNLOAD NOW button above
+            </div>
+            <div class="step">
+                <span class="step-number">2</span>
+                Double-click the .mcpack file that downloads
+            </div>
+            <div class="step">
+                <span class="step-number">3</span>
+                Enable in Minecraft → World Settings → Resource Packs
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Version 1.0.0 | Minecraft Bedrock Edition</p>
+            <p class="version">File: glow-loot-pack.mcpack (~150KB)</p>
+        </div>
+    </div>
+    
+    <script>
+        function downloadFile() {
+            // Create a temporary link and trigger download
+            const link = document.createElement('a');
+            link.href = 'glow-loot-pack.mcpack';
+            link.download = 'glow-loot-pack.mcpack';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+</body>
+</html>
