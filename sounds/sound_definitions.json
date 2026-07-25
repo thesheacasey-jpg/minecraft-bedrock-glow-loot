@@ -1,0 +1,21 @@
+{
+  "entity.item.pickup": {
+    "category": "master",
+    "sounds": ["sounds/item_pickup"]
+  },
+  "proximity.loot_tick_far": {
+    "category": "master",
+    "sounds": ["sounds/loot_tick_far"],
+    "volume": 0.5
+  },
+  "proximity.loot_tick_medium": {
+    "category": "master",
+    "sounds": ["sounds/loot_tick_medium"],
+    "volume": 0.7
+  },
+  "proximity.loot_tick_close": {
+    "category": "master",
+    "sounds": ["sounds/loot_tick_close"],
+    "volume": 1.0
+  }
+}
